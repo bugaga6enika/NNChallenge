@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="Contracts\" />
+		<None Remove="Newtonsoft.Json" />
+		<None Remove="Repositories\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Contracts\" />
+		<Folder Include="Repositories\" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\NNChallenge\NNChallenge.csproj" />
+	</ItemGroup>
+</Project>
